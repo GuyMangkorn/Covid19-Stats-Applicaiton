@@ -1,5 +1,6 @@
 package com.example.covid19stats
 
+
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,13 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.ViewFlipper
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.covid19stats.home.ILoadHome
 import com.example.covid19stats.home.PresenterHome
 import com.example.covid19stats.recyclercovid.StatsObject
 
-class HomeFragment : Fragment() , ILoadHome.ViewHome{
+class HomeFragment : Fragment() , ILoadHome.ViewHome {
     private lateinit var presenter: PresenterHome
     private lateinit var textTotalCase: TextView
     private lateinit var textTodayCase: TextView
@@ -24,6 +26,8 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome{
     private lateinit var textTotalCritical: TextView
     private lateinit var detailCountry: TextView
     private lateinit var flagImage: ImageView
+    private lateinit var flipTotalCases:ViewFlipper
+    private lateinit var flipTotalDeath:ViewFlipper
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -31,14 +35,18 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome{
     ): View? {
         val view= inflater.inflate(R.layout.home_fragment,container,false)
         presenter = PresenterHome(this)
+        flipTotalCases = view.findViewById(R.id.flipCaseTitle)
+        flipTotalDeath = view.findViewById(R.id.flipDeathTitle)
+        flipTotalCases.startFlipping()
+        flipTotalDeath.startFlipping()
         flagImage = view.findViewById(R.id.flagDetail)
-        textTotalCase = view.findViewById(R.id.detailTotalCase)
-        textTodayCase = view.findViewById(R.id.detailTodayCase)
-        textTotalDeaths = view.findViewById(R.id.detailTotalDeath)
-        textTodayDeaths = view.findViewById(R.id.detailTodayDeath)
-        textTotalRecovers = view.findViewById(R.id.detailRecover)
-        textTotalActive = view.findViewById(R.id.detailTotalActive)
-        textTotalCritical = view.findViewById(R.id.detailTotalCritical)
+        textTotalCase = view.findViewById(R.id.homeTotalCases)
+        textTodayCase = view.findViewById(R.id.homeTodayCases)
+        textTotalDeaths = view.findViewById(R.id.homeTotalDeath)
+        textTodayDeaths = view.findViewById(R.id.homeTodayDeath)
+        textTotalRecovers = view.findViewById(R.id.homeTotalRecovery)
+        textTotalActive = view.findViewById(R.id.homeTotalActive)
+        textTotalCritical = view.findViewById(R.id.homeTotalCritical)
         detailCountry = view.findViewById(R.id.detailCountry)
         val iso =(activity as MainActivity).countryISO()
         Log.d("TAG",iso)
@@ -56,6 +64,7 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome{
         textTotalCritical.text = arr[0].critical.toString()
         detailCountry.text = "Your Country"
     }
+
 
 
 }

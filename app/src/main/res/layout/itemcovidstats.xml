@@ -3,19 +3,17 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardList"
-    android:layout_marginBottom="10dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:elevation="25dp"
-    app:cardPreventCornerOverlap="false"
+    android:layout_marginStart="1dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="1dp"
+    android:elevation="0dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:theme="@style/Theme.MaterialComponents.CardCreateStyle"
     android:clickable="true"
     android:focusable="true"
     android:checkable="true"
-    app:checkedIconTint="@color/colorChecked"
-    app:cardCornerRadius="15dp">
+    app:checkedIconTint="@color/colorChecked">
 
 
     <LinearLayout

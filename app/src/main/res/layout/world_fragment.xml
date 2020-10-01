@@ -3,88 +3,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/bgcovid">
     <LinearLayout
         android:layout_marginTop="300dp"
         android:background="@drawable/circle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="0dp">
-
-        <LinearLayout
-            android:layout_marginEnd="35dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <androidx.core.widget.NestedScrollView
             android:layout_marginTop="55dp"
-            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Covid-19 Statistics"
-                android:textColor="@color/colorBlack"
-                android:textSize="20dp"
-                android:textStyle="bold" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldCases"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/totalCases"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldTodayCases"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/todayCases"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldDeath"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/totalDeaths"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldTodayDeath"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/todayDeaths"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldRecovers"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/totalRecovers"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldActive"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/totalActive"
                 android:textColor="@color/colorBlack" />
 
             <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeForDetail"
                 android:id="@+id/worldCritical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="5dp"
                 android:text="@string/totalCritical"
                 android:textColor="@color/colorBlack" />
         </LinearLayout>
 
-
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 
 

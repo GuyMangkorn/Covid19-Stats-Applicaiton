@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#342668</item>
-        <item name="colorPrimaryDark">#342668</item>
+        <item name="colorPrimary">#D5D0D0</item>
+        <item name="colorPrimaryDark">#D8D2D2</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 
     <style name="Theme.MaterialComponents.PinkStyle">
     <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
-    <item name="colorPrimary">#C3B84B</item>
+    <item name="colorPrimary">#CDCDC9</item>
     <item name="colorOnPrimary">#342668</item>
 </style>
 
@@ -23,8 +23,14 @@
 
     <style name="Theme.MaterialComponents.CardCreateStyle" >
         <item name="colorPrimary">@color/colorTint</item>
-        <item name="colorSurface">@color/colorAccent2</item>
-        <item name="colorOnSurface">@color/colorWhite</item>
+        <item name="colorSurface">@color/colorWhite</item>
+        <item name="colorOnSurface">@color/colorAccent2</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.CardCreateStyleHome" >
+        <item name="colorPrimary">@color/colorTint</item>
+        <item name="colorSurface">#CDCDC9</item>
+        <item name="colorOnSurface">@color/colorAccent2</item>
     </style>
 
     <style name="Theme.MaterialComponents.CardCreateStyleDark" >

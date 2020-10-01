@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".DetailCountry"
     android:orientation="vertical"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/bgcovid">
     <androidx.core.widget.NestedScrollView
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:padding="20dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -19,7 +19,7 @@
                 android:textStyle="bold"
                 android:id="@+id/detailCountry"
                 android:layout_margin="5dp"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/titleTextDetail"
                 android:layout_gravity="center"
                 android:text="Country"
@@ -42,7 +42,7 @@
                         android:textSize="@dimen/textSizeForDetail"
                         android:textStyle="bold"
                         android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/totalCases"/>
@@ -76,7 +76,7 @@
                         android:textSize="@dimen/textSizeForDetail"
                         android:textStyle="bold"
                         android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/todayCases"/>
@@ -105,14 +105,16 @@
                                 android:text="@string/todayCases" />
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
+
                     <TextView
-                        android:textSize="@dimen/textSizeForDetail"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/totalDeaths"/>
+                        android:layout_margin="5dp"
+                        android:text="@string/totalDeaths"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textSizeForDetail"
+                        android:textStyle="bold" />
+
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -142,7 +144,7 @@
                         android:textSize="@dimen/textSizeForDetail"
                         android:textStyle="bold"
                         android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/todayDeaths"/>
@@ -178,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:text="@string/totalRecovers"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
@@ -209,7 +211,7 @@
                         android:textSize="@dimen/textSizeForDetail"
                         android:textStyle="bold"
                         android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/totalActive"/>
@@ -242,7 +244,7 @@
                     <TextView
                         android:textSize="@dimen/textSizeForDetail"                        android:textStyle="bold"
                         android:layout_margin="5dp"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/totalCritical"/>

@@ -13,5 +13,10 @@
     <string name="gpsMessage">กรุณาเปิด GPS เพื่อค้นหาข้อมูลในตำแหน่งของท่าน</string>
     <string name="gpsConfirm">ไปหน้าเปิด GPS</string>
     <string name="gpsCancel">ยกเลิก</string>
+    
+    <string-array name="testItem">
+        <item>Total Cases</item>
+        <item>Today Cases</item>
+    </string-array>
 
 </resources>
