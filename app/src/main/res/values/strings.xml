@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">covid19stats</string>
+    <string name="totalCases">Total Cases</string>
+    <string name="todayCases">Today Cases</string>
+    <string name="totalDeaths">Total Deaths</string>
+    <string name="todayDeaths">Today Deaths</string>
+    <string name="totalRecovers">Total Recovers</string>
+    <string name="totalActive">Total Actives</string>
+    <string name="totalCritical">Total Critical</string>
+
+
+    <string name="gpsTitle">คุณยังไม่ได้เปิด GPS</string>
+    <string name="gpsMessage">กรุณาเปิด GPS เพื่อค้นหาข้อมูลในตำแหน่งของท่าน</string>
+    <string name="gpsConfirm">ไปหน้าเปิด GPS</string>
+    <string name="gpsCancel">ยกเลิก</string>
+
+</resources>

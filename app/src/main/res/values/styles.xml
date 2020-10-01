@@ -1,0 +1,55 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#342668</item>
+        <item name="colorPrimaryDark">#342668</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.MaterialComponents.PinkStyle">
+    <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+    <item name="colorPrimary">#C3B84B</item>
+    <item name="colorOnPrimary">#342668</item>
+</style>
+
+    <style name="Theme.MaterialComponents.NavWhite">
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorOnPrimary">#342668</item>
+    </style>
+
+
+    <style name="Theme.MaterialComponents.CardCreateStyle" >
+        <item name="colorPrimary">@color/colorTint</item>
+        <item name="colorSurface">@color/colorAccent2</item>
+        <item name="colorOnSurface">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.CardCreateStyleDark" >
+        <item name="colorPrimary">#8573C8</item>
+        <item name="colorSurface">#8573C8</item>
+        <item name="colorOnSurface">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.CardTransparent" >
+        <item name="colorPrimary">@color/colorTint</item>
+        <item name="colorSurface">@color/colorWhite</item>
+        <item name="colorOnSurface">@color/colorAccent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>
