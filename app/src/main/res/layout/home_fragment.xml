@@ -151,7 +151,7 @@
                                 android:textColor="@color/colorBlack"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/todayCases"
+                                android:text="@string/todayDeaths"
                                 android:scrollbars="vertical"
                                 />
                             <com.google.android.material.card.MaterialCardView
@@ -176,7 +176,7 @@
                                         android:textColor="@color/colorBlack"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/todayCases" />
+                                        android:text="@string/todayDeaths" />
                                 </LinearLayout>
                             </com.google.android.material.card.MaterialCardView>
                         </LinearLayout>
@@ -191,7 +191,7 @@
                                 android:textColor="@color/colorBlack"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/totalCases"
+                                android:text="@string/totalDeaths"
                                 android:scrollbars="vertical"
                                 />
                             <com.google.android.material.card.MaterialCardView
@@ -216,7 +216,7 @@
                                         android:textColor="@color/colorBlack"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/totalCases" />
+                                        android:text="@string/totalDeaths" />
                                 </LinearLayout>
                             </com.google.android.material.card.MaterialCardView>
                         </LinearLayout>
