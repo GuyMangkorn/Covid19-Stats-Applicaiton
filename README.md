@@ -1,13 +1,11 @@
 # Covid19-Stats
-This Application is my Mini Projects to pratices
-<br/>
-GPS Location , MVP Design , ViewFlipper , Animation , Material Design , Gson API.
+This Application is my Mini Projects to pratices GPS Location,MVP Design,ViewFlipper,Animation,Material Design,Gson API.
 <br/>
 <br/>
 #### Contact
-Contact for Internship 0959594579 , January - April.
+For Internship 0959594579 , January - April.
 <br/>
-email : Katawong0@gmail.com
+Email : Katawong0@gmail.com
 <br/>
 
 ### Home Page
