@@ -14,6 +14,8 @@ import com.bumptech.glide.Glide
 import com.example.covid19stats.home.ILoadHome
 import com.example.covid19stats.home.PresenterHome
 import com.example.covid19stats.recyclercovid.StatsObject
+import java.text.DecimalFormat
+import java.text.NumberFormat
 
 class HomeFragment : Fragment() , ILoadHome.ViewHome {
     private lateinit var presenter: PresenterHome
@@ -54,15 +56,16 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome {
         return view
     }
     override fun resultData(arr: ArrayList<StatsObject>) {
+        val format: NumberFormat = DecimalFormat("#,###,###,###")
         Glide.with(this).load("https://www.countryflags.io/${arr[0].ISO2}/shiny/64.png").into(flagImage)
-        textTotalCase.text = arr[0].cases.toString()
-        textTodayCase.text = arr[0].todayCases.toString()
-        textTotalDeaths.text = arr[0].death.toString()
-        textTodayDeaths.text = arr[0].todayDeath.toString()
-        textTotalRecovers.text = arr[0].recovered.toString()
-        textTotalActive.text = arr[0].active.toString()
-        textTotalCritical.text = arr[0].critical.toString()
-        detailCountry.text = "Your Country"
+        textTotalCase.text = format.format(arr[0].cases)
+        textTodayCase.text = format.format(arr[0].todayCases)
+        textTotalDeaths.text = format.format(arr[0].death)
+        textTodayDeaths.text = format.format(arr[0].todayDeath)
+        textTotalRecovers.text = format.format(arr[0].recovered)
+        textTotalActive.text = format.format(arr[0].active)
+        textTotalCritical.text = format.format(arr[0].critical)
+        detailCountry.text = requireActivity().getString(R.string.yourCountry)
     }
 
 

@@ -7,6 +7,7 @@
     <string name="totalRecovers">Total Recovers</string>
     <string name="totalActive">Total Actives</string>
     <string name="totalCritical">Total Critical</string>
+    <string name="yourCountry">Your Country</string>
 
 
     <string name="gpsTitle">คุณยังไม่ได้เปิด GPS</string>
