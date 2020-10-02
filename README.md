@@ -2,7 +2,7 @@
 This Application is my Mini Projects to pratice GPS Location , MVP Design , ViewFlipper , Animation , Material Design.
 <br/>
 <br/>
-Contact for Internship 0959594579
+Contact for Internship 0959594579 , January - April.
 <br/>
 
 ### Home Page
