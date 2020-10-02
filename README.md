@@ -1,5 +1,5 @@
 # Covid19-Stats
-This Application is my Mini Projects to pratice GPS Location , MVP Design , ViewFlipper , Animation , Material Design.
+This Application is my Mini Projects to pratice GPS Location , MVP Design , ViewFlipper , Animation , Material Design , Gson API.
 <br/>
 <br/>
 Contact for Internship 0959594579 , January - April.
