@@ -3,7 +3,7 @@ This Application is my Mini Projects to pratices GPS Location,MVP Design,ViewFli
 <br/>
 <br/>
 #### Contact
-For Internship 0959594579 , January - April.
+Contact for Internship 0959594579 , January - April.
 <br/>
 Email : Katawong0@gmail.com
 <br/>
