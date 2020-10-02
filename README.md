@@ -1,5 +1,5 @@
 # Covid19-Stats
-This Application is my Mini Projects to pratice GPS Location , MVP Design , ViewFlipper , Animation.
+This Application is my Mini Projects to pratice GPS Location , MVP Design , ViewFlipper , Animation , Material Design.
 
 ### Home Page
 
