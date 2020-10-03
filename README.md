@@ -9,14 +9,14 @@ Email : Katawong0@gmail.com
 <br/>
 
 ### Home Page
-<br/>
+
 <img src="/resource/home_fragment.gif" style="width: 30%;">
 
 ### World Page
-<br/>
-<img src="/resource/world_fragment.gif" style="width: 30%;">
+
+<img src="/resource/world_fragment_fix.gif" style="width: 30%;">
 
 
 ### List and Detail Page
-<br/>
+
 <img src="/resource/list_fragment.gif" style="width: 30%;">
