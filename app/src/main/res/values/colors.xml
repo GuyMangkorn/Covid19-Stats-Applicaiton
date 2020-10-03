@@ -13,8 +13,8 @@
     <color name="colorBackground">#FAEEEE</color>
     <color name="colorPink1">#EFC9DC</color>
     <color name="colorChecked">#C3B84B</color>
-    <color name="colorRecovery">#309C34</color>
-    <color name="colorCritical">#C32F25</color>
+    <color name="colorRecovery">#40D646</color>
+    <color name="colorCritical">#E63125</color>
     <color name="colorToday">#CDBF3C</color>
 
 
