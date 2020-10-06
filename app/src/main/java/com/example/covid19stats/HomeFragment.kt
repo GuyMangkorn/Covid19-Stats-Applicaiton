@@ -11,14 +11,14 @@ import android.widget.TextView
 import android.widget.ViewFlipper
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.example.covid19stats.home.ILoadHome
-import com.example.covid19stats.home.PresenterHome
+import com.example.covid19stats.recyclercovid.ILoadData
+import com.example.covid19stats.recyclercovid.Presenter
 import com.example.covid19stats.recyclercovid.StatsObject
 import java.text.DecimalFormat
 import java.text.NumberFormat
 
-class HomeFragment : Fragment() , ILoadHome.ViewHome {
-    private lateinit var presenter: PresenterHome
+class HomeFragment : Fragment() , ILoadData.ViewStats {
+    private lateinit var presenter: Presenter
     private lateinit var textTotalCase: TextView
     private lateinit var textTodayCase: TextView
     private lateinit var textTotalDeaths: TextView
@@ -36,7 +36,7 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome {
         savedInstanceState: Bundle?
     ): View? {
         val view= inflater.inflate(R.layout.home_fragment,container,false)
-        presenter = PresenterHome(this)
+        presenter = Presenter(this)
         flipTotalCases = view.findViewById(R.id.flipCaseTitle)
         flipTotalDeath = view.findViewById(R.id.flipDeathTitle)
         flipTotalCases.startFlipping()
@@ -52,7 +52,7 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome {
         detailCountry = view.findViewById(R.id.detailCountry)
         val iso =(activity as MainActivity).countryISO()
         Log.d("TAG",iso)
-        presenter.loadData(iso)
+        presenter.loadDataHome(iso)
         return view
     }
     override fun resultData(arr: ArrayList<StatsObject>) {
@@ -67,7 +67,4 @@ class HomeFragment : Fragment() , ILoadHome.ViewHome {
         textTotalCritical.text = format.format(arr[0].critical)
         detailCountry.text = requireActivity().getString(R.string.yourCountry)
     }
-
-
-
 }

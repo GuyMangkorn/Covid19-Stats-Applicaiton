@@ -149,6 +149,7 @@ class MainActivity : AppCompatActivity() , LocationListener {
     override fun onProviderEnabled(provider: String) {
         Log.d("TAG","main : EnableCheck")
         checkRefresh = true
+        permissionCheck()
     }
     override fun onProviderDisabled(provider: String) {
         if (provider == LocationManager.GPS_PROVIDER) {

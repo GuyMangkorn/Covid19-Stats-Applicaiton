@@ -6,5 +6,8 @@ interface ILoadData {
     }
     interface PresenterStats{
         fun loadData()
+        fun loadDataHome(iso:String)
+        fun loadDataWorld()
+
     }
 }

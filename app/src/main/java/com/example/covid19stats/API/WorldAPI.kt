@@ -10,7 +10,7 @@ const val WORLD_URL = "https://coronavirus-19-api.herokuapp.com/"
 
 interface WorldAPI {
     @GET("countries")
-    fun getWorldData(): Call<List<StatsObject>>
+    fun getWorldData(): Call<ArrayList<StatsObject>>
     companion object {
         operator fun invoke(): WorldAPI {
             return Retrofit.Builder().baseUrl(WORLD_URL).addConverterFactory(GsonConverterFactory.create()).build().create(WorldAPI::class.java)

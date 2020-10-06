@@ -2,7 +2,6 @@ package com.example.covid19stats
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,16 +9,16 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.covid19stats.recyclercovid.ILoadData
+import com.example.covid19stats.recyclercovid.Presenter
 import com.example.covid19stats.recyclercovid.StatsObject
-import com.example.covid19stats.worldstats.IWorld
-import com.example.covid19stats.worldstats.WorldPresenter
 import com.google.android.material.card.MaterialCardView
 import java.text.DecimalFormat
 import java.text.NumberFormat
 
-class WorldFragment : Fragment() ,IWorld.ViewWorld{
+class WorldFragment : Fragment() ,ILoadData.ViewStats{
     private lateinit var cardView:MaterialCardView
-    private var presenter:WorldPresenter? = null
+    private lateinit var presenter:Presenter
     private lateinit var worldImage:ImageView
     private lateinit var totalCases:TextView
     private lateinit var todayCases:TextView
@@ -36,8 +35,8 @@ class WorldFragment : Fragment() ,IWorld.ViewWorld{
     ): View? {
         val view=  inflater.inflate(R.layout.world_fragment,container,false)
         worldImage = view.findViewById(R.id.imageWorld)
-        presenter = WorldPresenter(this)
-        presenter!!.loadDataWorld()
+        presenter = Presenter(this)
+        presenter.loadDataWorld()
         totalCases = view.findViewById(R.id.worldCases)
         todayCases = view.findViewById(R.id.worldTodayCases)
         totalDeaths = view.findViewById(R.id.worldDeath)
@@ -51,7 +50,7 @@ class WorldFragment : Fragment() ,IWorld.ViewWorld{
     }
 
     @SuppressLint("SetTextI18n")
-    override fun resultWorld(arr: List<StatsObject>) {
+    override fun resultData(arr: ArrayList<StatsObject>) {
         val format: NumberFormat = DecimalFormat("#,###,###,###")
         totalCases.text = "${getString(R.string.totalCases)} : ${format.format(arr[0].cases)}"
         todayCases.text = "${getString(R.string.todayCases)} : ${format.format(arr[0].todayCases)}"
