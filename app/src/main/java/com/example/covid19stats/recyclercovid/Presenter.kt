@@ -1,9 +1,9 @@
 package com.example.covid19stats.recyclercovid
 
 import android.util.Log
-import com.example.covid19stats.API.ISO2API
-import com.example.covid19stats.API.StatsAPI
-import com.example.covid19stats.API.WorldAPI
+import com.example.covid19stats.api.ISO2API
+import com.example.covid19stats.api.StatsAPI
+import com.example.covid19stats.api.WorldAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

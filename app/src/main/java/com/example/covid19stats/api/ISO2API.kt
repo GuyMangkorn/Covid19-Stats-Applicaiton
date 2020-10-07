@@ -1,4 +1,4 @@
-package com.example.covid19stats.API
+package com.example.covid19stats.api
 
 import com.example.covid19stats.recyclercovid.ISO2object
 import retrofit2.Call
