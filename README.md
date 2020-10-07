@@ -1,5 +1,5 @@
 # Covid19-Stats
-This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP Design,ViewFlipper,Animation,Material Design,Gson API.
+This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP Design,ViewFlipper,Animation,Material Design,Retrofit API.
 <br/>
 <br/>
 #### Contact
