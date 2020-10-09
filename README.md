@@ -3,9 +3,8 @@ This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP D
 <br/>
 <br/>
 #### Contact
-Contact for Internship 0959594579 , January - April.
-<br/>
-Email : Katawong0@gmail.com
+- Contact for Internship 0959594579 , January - April.
+- Email : Katawong0@gmail.com
 <br/>
 
 ### Home Page
