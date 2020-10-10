@@ -27,8 +27,7 @@ This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP D
 <img src="/resource/list_fragment.gif" style="width: 30%;">
 
 ## API
-
-- Click for more detail 
+#### Click for more detail 
 - https://covid19api.com/
 - https://github.com/javieraviles/covidAPI
 - https://www.countryflags.io/
