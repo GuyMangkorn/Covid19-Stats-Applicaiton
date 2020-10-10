@@ -6,16 +6,21 @@ This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP D
 - Contact for Internship 0959594579 , January - April.
 - Email : Katawong0@gmail.com
 <br/>
+### Overview
 
-### Home Page
+- Show total 0f Covid-19 stats.
+- Show stats of Covid-19 in your country.
+- Show ranking today cases of Covid-19.
+
+#### Home Page
 
 <img src="/resource/home_fragment.gif" style="width: 30%;">
 
-### World Page
+#### World Page
 
 <img src="/resource/world_fragment_fix.gif" style="width: 30%;">
 
 
-### List and Detail Page
+#### List and Detail Page
 
 <img src="/resource/list_fragment.gif" style="width: 30%;">
