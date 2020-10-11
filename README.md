@@ -2,7 +2,7 @@
 This Application is my Mini Projects to pratices GPS Location,Geo Location,MVP Design,ViewFlipper,Animation,Material Design,Retrofit API.
 <br/>
 <br/>
-#### Contact
+### Contact
 - Contact for Internship 0959594579 , January - April.
 - Email : Katawong0@gmail.com
 <br/>
